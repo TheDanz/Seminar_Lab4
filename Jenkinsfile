@@ -11,7 +11,7 @@ pipeline {
         stage('Setup Python Environment') {
             steps {
                 script {
-                    sh "echo $(pwd)"
+                    sh 'python3 -m unittest tests.py'
                 }
             }
         }
@@ -19,7 +19,7 @@ pipeline {
         stage('Run Unit Tests') {
             steps {
                 script {
-                    sh "echo $(pwd)"
+                    sh 'pwd'
                 }
             }
         }
