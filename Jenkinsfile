@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
             steps {
-                git branch: 'master', url: 'https://github.com/TheDanz/Seminar_Lab4'
+                checkout scm
             }
         }
         
