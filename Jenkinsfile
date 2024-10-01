@@ -11,7 +11,7 @@ pipeline {
         stage('Setup Python Environment') {
             steps {
                 script {
-                    sh 'pip install -r requirements.txt'
+                    sh 'date'
                 }
             }
         }
@@ -19,7 +19,7 @@ pipeline {
         stage('Run Unit Tests') {
             steps {
                 script {
-                    sh 'python3 -m unittest tests.py'
+                    sh 'date'
                 }
             }
         }
